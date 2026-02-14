@@ -271,12 +271,12 @@ SimulationLab Component:
 ## Project Demo
 
 ### Video
-[INSERT DEMO VIDEO LINK - YouTube/Google Drive]
+[Drive](https://drive.google.com/file/d/1MTp_8Q7GCCftgJo6cizhWfln9zj-j6cD/view?usp=drivesdk) 
 
 *The demo video showcases the complete user journey from the landing page through the simulation, glitch reveal, escape plan, and final return page. Key highlights include the black hole animation, infinite scroll mechanics, real-time tracking, data visualizations, and AI-powered insights.*
 
 ### Live Demo
-[INSERT HOSTED PROJECT LINK]
+[INSERT HOSTED PROJECT LINK](https://black-hole-fawn.vercel.app)
 
 ---
 
@@ -331,12 +331,6 @@ SimulationLab Component:
 - Custom business logic for tracking algorithms
 - AI prompt engineering and iteration
 - Final polish and optimization
-
----
-
-## Team Contributions
-
-- **[INSERT NAME]**: Full-stack development, UI/UX design, animation implementation, AI integration, testing, and documentation
 
 ---
 
