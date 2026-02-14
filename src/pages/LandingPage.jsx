@@ -8,7 +8,7 @@ const LandingPage = () => {
     return (
         <main className="relative w-full h-screen flex flex-col items-center justify-center bg-black overflow-hidden">
             {/* Starfield background */}
-            <div className="absolute inset-0">
+            <div className="absolute inset-0 flex items-center justify-center">
                 {[...Array(100)].map((_, i) => (
                     <motion.div
                         key={i}
@@ -35,7 +35,7 @@ const LandingPage = () => {
             <div className="relative z-10 flex flex-col items-center">
                 {/* Outer accretion disk glow */}
                 <motion.div
-                    className="absolute w-[600px] h-[600px] rounded-full opacity-40"
+                    className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full opacity-40 animate-glow-pulse"
                     style={{
                         background: 'radial-gradient(circle, transparent 30%, rgba(147,51,234,0.4) 50%, rgba(59,130,246,0.3) 70%, transparent 100%)',
                         filter: 'blur(40px)',
@@ -53,7 +53,7 @@ const LandingPage = () => {
 
                 {/* Rotating accretion disk - outer ring */}
                 <motion.div
-                    className="absolute w-[500px] h-[500px] rounded-full"
+                    className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] rounded-full"
                     style={{
                         background: 'conic-gradient(from 0deg, transparent, rgba(147,51,234,0.8), rgba(59,130,246,0.6), transparent)',
                         filter: 'blur(8px)',
@@ -64,7 +64,7 @@ const LandingPage = () => {
 
                 {/* Middle accretion ring */}
                 <motion.div
-                    className="absolute w-[400px] h-[400px] rounded-full border-4 border-purple-500/40"
+                    className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] rounded-full border-4 border-purple-500/40"
                     animate={{ rotate: -360 }}
                     transition={{ duration: 15, repeat: Infinity, ease: "linear" }}
                     style={{
@@ -74,7 +74,7 @@ const LandingPage = () => {
 
                 {/* Inner swirling vortex */}
                 <motion.div
-                    className="absolute w-[320px] h-[320px] rounded-full"
+                    className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[320px] h-[320px] rounded-full"
                     style={{
                         background: 'conic-gradient(from 180deg, rgba(59,130,246,0.9), rgba(147,51,234,0.9), rgba(236,72,153,0.7), rgba(59,130,246,0.9))',
                         filter: 'blur(12px)',
@@ -85,7 +85,7 @@ const LandingPage = () => {
 
                 {/* Event horizon - the black center */}
                 <motion.div
-                    className="absolute w-[250px] h-[250px] rounded-full bg-black flex items-center justify-center"
+                    className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[250px] h-[250px] rounded-full bg-black flex items-center justify-center"
                     style={{
                         boxShadow: 'inset 0 0 100px rgba(0,0,0,1), 0 0 80px rgba(147,51,234,0.8)',
                     }}
@@ -167,7 +167,7 @@ const LandingPage = () => {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.3, duration: 1.5 }}
-                className="absolute top-12 text-4xl md:text-5xl font-black tracking-wider text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-blue-400 to-purple-400"
+                className="absolute top-12 text-4xl md:text-5xl font-black tracking-wider gradient-text"
                 style={{
                     textShadow: '0 0 30px rgba(147,51,234,0.5)',
                 }}
